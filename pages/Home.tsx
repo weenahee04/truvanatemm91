@@ -10,6 +10,7 @@ import { SEO, SEOPresets } from '../components/SEO';
 import { getAllProducts, getFlashSaleProducts } from '../services/productService';
 import { Product } from '../types';
 import MissionWidget from '../components/MissionWidget';
+import { useJackpots } from '../services/jackpotService';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ export const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [flashSaleProducts, setFlashSaleProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const { data: jackpotData } = useJackpots();
 
   // Load products from Firestore
   useEffect(() => {
@@ -341,11 +343,26 @@ export const Home: React.FC = () => {
           
           <div className="relative z-10 p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div className="space-y-4">
-              <div className="inline-block bg-black text-brand-gold px-3 py-1 text-xs font-bold tracking-widest uppercase mb-2">Jackpot Alert</div>
+              <div className="inline-block bg-black text-brand-gold px-3 py-1 text-xs font-bold tracking-widest uppercase mb-2">{t('home:sections.jackpotAlert')}</div>
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">{t('home:lottoBanner.title')}</h2>
               <p className="text-slate-800 font-medium max-w-lg text-lg">
                 {t('home:lottoBanner.description')}
               </p>
+              {/* Real-time Jackpot Amounts */}
+              {jackpotData && (
+                <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                  <div className="bg-white/90 backdrop-blur rounded-lg px-4 py-3 border border-black/10 shadow-md">
+                    <div className="text-xs font-bold text-red-600 uppercase tracking-wider">Powerball</div>
+                    <div className="text-2xl font-black text-slate-900">{jackpotData.powerball.jackpot}</div>
+                    <div className="text-xs text-slate-500">{jackpotData.powerball.nextDraw}</div>
+                  </div>
+                  <div className="bg-black/90 backdrop-blur rounded-lg px-4 py-3 border border-brand-gold/30 shadow-md">
+                    <div className="text-xs font-bold text-brand-gold uppercase tracking-wider">Mega Millions</div>
+                    <div className="text-2xl font-black text-white">{jackpotData.megaMillions.jackpot}</div>
+                    <div className="text-xs text-slate-400">{jackpotData.megaMillions.nextDraw}</div>
+                  </div>
+                </div>
+              )}
               <div className="pt-4">
                  <Button size="lg" variant="secondary" onClick={() => navigate('/lotto')} className="shadow-lg">{t('common:button.chooseYourNumbers')}</Button>
               </div>
