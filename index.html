@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Suppress browser extension errors FIRST (before anything else loads) -->
+    <script>
+      (function() {
+        'use strict';
+        // Aggressive error suppression for browser extensions
+        var suppressExtensionError = function(e) {
+          if (!e) return false;
+          var msg = (e.message || e.reason?.message || String(e.reason) || String(e) || '').toLowerCase();
+          var filename = (e.filename || e.source || '').toLowerCase();
+          var errorName = (e.error?.name || e.reason?.name || '').toLowerCase();
+          
+          var patterns = [
+            'blocked a frame with origin',
+            'failed to read a named property',
+            'securityerror',
+            'inpage.js',
+            'extension://',
+            'chrome-extension://',
+            'moz-extension://',
+            'content-script',
+            'truvamate-9e0fa.firebaseapp.com',
+            'isrisk',
+            'cross-origin',
+            'crossorigin',
+            'xss-auditor',
+            'metamask',
+            'wallet'
+          ];
+          
+          var combined = msg + ' ' + filename + ' ' + errorName;
+          return patterns.some(function(p) { return combined.indexOf(p) !== -1; }) || errorName === 'securityerror';
+        };
+        
+        // Catch all errors
+        var origOnError = window.onerror;
+        window.onerror = function(msg, source, lineno, colno, error) {
+          if (suppressExtensionError({message: msg, filename: source, error: error})) {
+            return true;
+          }
+          return origOnError ? origOnError.call(this, msg, source, lineno, colno, error) : false;
+        };
+        
+        // Catch unhandled promise rejections
+        window.addEventListener('unhandledrejection', function(e) {
+          if (suppressExtensionError({reason: e.reason})) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+        
+        // Catch all errors via event listener
+        window.addEventListener('error', function(e) {
+          if (suppressExtensionError(e)) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+        
+        // Suppress console.error
+        var origConsoleError = console.error;
+        console.error = function() {
+          var msg = Array.prototype.slice.call(arguments).join(' ').toLowerCase();
+          if (!suppressExtensionError({message: msg})) {
+            origConsoleError.apply(console, arguments);
+          }
+        };
+        
+        // Suppress console.warn for extension warnings
+        var origConsoleWarn = console.warn;
+        console.warn = function() {
+          var msg = Array.prototype.slice.call(arguments).join(' ').toLowerCase();
+          if (!suppressExtensionError({message: msg})) {
+            origConsoleWarn.apply(console, arguments);
+          }
+        };
+      })();
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>Truvamate | สินค้าอเมริกา & สินค้าพิเศษจาก USA</title>
+    <meta name="title" content="Truvamate | สินค้าอเมริกา & สินค้าพิเศษจาก USA" />
+    <meta name="description" content="บริการฝากซื้อสินค้าจากอเมริกา และสินค้าพิเศษจาก USA ส่งตรงถึงไทย สินค้าแบรนด์ดัง ของแท้ 100% บริการมืออาชีพ ปลอดภัย เชื่อถือได้" />
+    <meta name="keywords" content="ฝากซื้อสินค้าอเมริกา, สินค้าจากอเมริกา, USA import, สินค้าพิเศษ USA, ของฝากอเมริกา, Truvamate, ซื้อของจากอเมริกา, messenger service" />
+    <meta name="author" content="Truvamate" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://truvamatenewversion-master.vercel.app/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://truvamatenewversion-master.vercel.app/" />
+    <meta property="og:title" content="Truvamate | สินค้าอเมริกา & สินค้าพิเศษจาก USA" />
+    <meta property="og:description" content="บริการฝากซื้อสินค้าจากอเมริกา และสินค้าพิเศษจาก USA ส่งตรงถึงไทย สินค้าแบรนด์ดัง ของแท้ 100%" />
+    <meta property="og:image" content="https://truvamatenewversion-master.vercel.app/og-image.jpg" />
+    <meta property="og:site_name" content="Truvamate" />
+    <meta property="og:locale" content="th_TH" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://truvamatenewversion-master.vercel.app/" />
+    <meta property="twitter:title" content="Truvamate | สินค้าอเมริกา & สินค้าพิเศษจาก USA" />
+    <meta property="twitter:description" content="บริการฝากซื้อสินค้าจากอเมริกา และสินค้าพิเศษจาก USA ส่งตรงถึงไทย" />
+    <meta property="twitter:image" content="https://truvamatenewversion-master.vercel.app/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/truvamate-logo.png" />
+    <link rel="apple-touch-icon" href="/truvamate-logo.png" />
+    
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Truvamate | สินค้าอเมริกา & สินค้าพิเศษจาก USA" />
+    <meta itemprop="description" content="บริการฝากซื้อสินค้าจากอเมริกา และสินค้าพิเศษจาก USA ส่งตรงถึงไทย" />
+    <meta itemprop="image" content="https://truvamatenewversion-master.vercel.app/og-image.jpg" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Kanit', 'Inter', 'sans-serif'],
+            },
+            colors: {
+              // Override slate to be neutral (remove blue tint)
+              slate: {
+                50: '#fafafa',
+                100: '#f5f5f5',
+                200: '#e5e5e5',
+                300: '#d4d4d4',
+                400: '#a3a3a3',
+                500: '#737373',
+                600: '#525252',
+                700: '#404040',
+                800: '#262626',
+                900: '#171717',
+                950: '#0a0a0a',
+              },
+              brand: {
+                navy: '#000000', // Main Theme Color (Black)
+                blue: '#262626', // Accents (Dark Gray)
+                gold: '#FFD700', // Premium/Stars (Vivid Yellow)
+                red: '#ef4444',  // Flash Sale/Discount (Keep Red for alerts, or change if needed)
+                gray: '#f5f5f5', // Background (Light Gray)
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Hide scrollbar for chrome/safari/opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-gray text-slate-800 font-sans antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

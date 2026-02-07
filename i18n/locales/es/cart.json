@@ -1,0 +1,17 @@
+{
+  "title": "Carrito de compras",
+  "titleWithCount": "Carrito ({{count}} artículos)",
+  "empty": {
+    "title": "Tu carrito está vacío",
+    "description": "No hay artículos en tu carrito. ¡Descubre productos de calidad de USA!"
+  },
+  "summary": {
+    "title": "Resumen del pedido",
+    "subtotal": "Subtotal ({{count}} pzas)",
+    "shipping": "Envío (flete aéreo)",
+    "discount": "Descuento",
+    "total": "Total",
+    "discountCode": "Ingresa código de descuento"
+  },
+  "option": "Opción: {{option}}"
+}

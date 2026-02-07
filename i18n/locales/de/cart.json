@@ -1,0 +1,17 @@
+{
+  "title": "Warenkorb",
+  "titleWithCount": "Warenkorb ({{count}} Artikel)",
+  "empty": {
+    "title": "Ihr Warenkorb ist leer",
+    "description": "Keine Artikel im Warenkorb. Entdecken Sie Qualitätsprodukte aus den USA!"
+  },
+  "summary": {
+    "title": "Bestellübersicht",
+    "subtotal": "Zwischensumme ({{count}} Stk.)",
+    "shipping": "Versand (Luftfracht)",
+    "discount": "Rabatt",
+    "total": "Gesamt",
+    "discountCode": "Rabattcode eingeben"
+  },
+  "option": "Option: {{option}}"
+}

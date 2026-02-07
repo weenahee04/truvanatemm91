@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "ของแท้ 100%",
+    "authenticDesc": "ตรวจสอบได้ทุกชิ้น",
+    "directFromUSA": "ส่งตรงจาก USA",
+    "directFromUSADesc": "เคลียร์ภาษีเรียบร้อย",
+    "securePayment": "ชำระเงินปลอดภัย",
+    "securePaymentDesc": "รองรับทุกธนาคารไทย",
+    "fastShipping": "ส่งไว 7-14 วัน",
+    "fastShippingDesc": "สำหรับสินค้า Air Freight"
+  },
+  "sections": {
+    "popularCategories": "หมวดหมู่ยอดนิยม",
+    "flashSale": "FLASH SALE",
+    "bestSellers": "สินค้าขายดีประจำสัปดาห์",
+    "noFlashSale": "ยังไม่มีสินค้า Flash Sale",
+    "noProducts": "ยังไม่มีสินค้าในระบบ",
+    "specialOffer": "SPECIAL OFFER",
+    "jackpotAlert": "Jackpot Alert"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "ลุ้นรางวัลแจ็กพอตระดับโลกได้แล้ววันนี้ บริการฝากซื้อสินค้าพิเศษจากตัวแทนที่ได้รับอนุญาตในสหรัฐฯ"
+  }
+}

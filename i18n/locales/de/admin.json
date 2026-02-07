@@ -1,0 +1,35 @@
+{
+  "panel": {
+    "title": "Admin-Panel",
+    "dashboard": "Dashboard",
+    "users": "Benutzer",
+    "orders": "Bestellungen",
+    "products": "Produkte",
+    "payments": "Zahlungen",
+    "billing": "Abrechnung",
+    "settings": "Einstellungen",
+    "sellers": "Verkäufer",
+    "referrals": "Empfehlungen",
+    "lottoOrders": "Spezialprodukt-Bestellungen",
+    "ocrScanner": "OCR-Scanner",
+    "photoUpload": "Foto-Upload",
+    "drivePhotos": "Drive-Fotos",
+    "ticketPricing": "Ticket-Preise",
+    "paymentSettings": "Zahlungseinstellungen",
+    "exchangeRate": "Wechselkurs",
+    "management": "Admin-Verwaltung",
+    "location": "Standortanalyse",
+    "logout": "Abmelden"
+  },
+  "common": {
+    "search": "Suchen...",
+    "filter": "Filtern",
+    "export": "Exportieren",
+    "refresh": "Aktualisieren",
+    "actions": "Aktionen",
+    "status": "Status",
+    "date": "Datum",
+    "total": "Gesamt",
+    "details": "Details"
+  }
+}

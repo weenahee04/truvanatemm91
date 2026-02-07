@@ -1,0 +1,17 @@
+# Backend folder - completely excluded
+backend/
+backend/**
+backend/**/*
+
+# Logs and temp files
+*.log
+*.tmp
+.DS_Store
+
+# Dependencies (will be installed during build)
+node_modules/
+dist/
+
+# Documentation files
+*.md
+!README.md

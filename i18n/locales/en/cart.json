@@ -1,0 +1,17 @@
+{
+  "title": "Shopping Cart",
+  "titleWithCount": "Shopping Cart ({{count}} items)",
+  "empty": {
+    "title": "Your cart is empty",
+    "description": "No items in your cart yet. Browse quality products from the USA!"
+  },
+  "summary": {
+    "title": "Order Summary",
+    "subtotal": "Subtotal ({{count}} pcs)",
+    "shipping": "Shipping (Air Freight)",
+    "discount": "Discount",
+    "total": "Total",
+    "discountCode": "Enter discount code"
+  },
+  "option": "Option: {{option}}"
+}

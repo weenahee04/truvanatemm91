@@ -1,0 +1,50 @@
+# Railway Ignore File
+# ไฟล์และโฟลเดอร์ที่จะไม่ถูก upload ไปยัง Railway
+
+# Dependencies (จะถูก install ใหม่)
+node_modules/
+
+# Build output (จะถูก build ใหม่)
+dist/
+
+# Logs
+logs/
+*.log
+
+# Environment files (ใช้ Railway Variables แทน)
+.env
+.env.local
+.env.production
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+test/
+tests/
+*.test.ts
+*.spec.ts
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Firebase Service Account (ใช้ Environment Variable แทน)
+firebase-service-account.json

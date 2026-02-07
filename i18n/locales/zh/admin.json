@@ -1,0 +1,35 @@
+{
+  "panel": {
+    "title": "管理面板",
+    "dashboard": "仪表盘",
+    "users": "用户",
+    "orders": "订单",
+    "products": "商品",
+    "payments": "支付",
+    "billing": "账单",
+    "settings": "设置",
+    "sellers": "卖家",
+    "referrals": "推荐",
+    "lottoOrders": "特殊商品订单",
+    "ocrScanner": "OCR扫描",
+    "photoUpload": "照片上传",
+    "drivePhotos": "云端照片",
+    "ticketPricing": "票价设置",
+    "paymentSettings": "支付设置",
+    "exchangeRate": "汇率",
+    "management": "管理员管理",
+    "location": "位置分析",
+    "logout": "退出登录"
+  },
+  "common": {
+    "search": "搜索...",
+    "filter": "筛选",
+    "export": "导出",
+    "refresh": "刷新",
+    "actions": "操作",
+    "status": "状态",
+    "date": "日期",
+    "total": "合计",
+    "details": "详情"
+  }
+}

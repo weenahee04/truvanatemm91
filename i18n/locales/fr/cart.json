@@ -1,0 +1,17 @@
+{
+  "title": "Panier",
+  "titleWithCount": "Panier ({{count}} articles)",
+  "empty": {
+    "title": "Votre panier est vide",
+    "description": "Aucun article dans votre panier. Découvrez des produits de qualité des USA !"
+  },
+  "summary": {
+    "title": "Résumé de la commande",
+    "subtotal": "Sous-total ({{count}} pcs)",
+    "shipping": "Livraison (fret aérien)",
+    "discount": "Réduction",
+    "total": "Total",
+    "discountCode": "Entrez le code de réduction"
+  },
+  "option": "Option : {{option}}"
+}

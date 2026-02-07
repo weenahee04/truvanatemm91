@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100% Authentisch",
+    "authenticDesc": "Jeder Artikel geprüft",
+    "directFromUSA": "Direkt aus den USA",
+    "directFromUSADesc": "Verzollt",
+    "securePayment": "Sichere Zahlung",
+    "securePaymentDesc": "Alle Banken akzeptiert",
+    "fastShipping": "Schnell 7-14 Tage",
+    "fastShippingDesc": "Für Luftfracht-Artikel"
+  },
+  "sections": {
+    "popularCategories": "Beliebte Kategorien",
+    "flashSale": "BLITZANGEBOT",
+    "bestSellers": "Bestseller der Woche",
+    "noFlashSale": "Keine Blitzangebote verfügbar",
+    "noProducts": "Noch keine Produkte verfügbar",
+    "specialOffer": "SONDERANGEBOT",
+    "jackpotAlert": "Jackpot-Alarm"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "Gewinnen Sie heute Jackpot-Preise von Weltklasse! Einkaufsservice für Spezialprodukte von autorisierten Händlern in den USA."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100%正品",
+    "authenticDesc": "每件商品均经过验证",
+    "directFromUSA": "美国直邮",
+    "directFromUSADesc": "已完成清关",
+    "securePayment": "安全支付",
+    "securePaymentDesc": "支持所有泰国银行",
+    "fastShipping": "快速配送 7-14天",
+    "fastShippingDesc": "空运商品"
+  },
+  "sections": {
+    "popularCategories": "热门分类",
+    "flashSale": "限时特卖",
+    "bestSellers": "本周畅销商品",
+    "noFlashSale": "暂无限时特卖商品",
+    "noProducts": "暂无商品",
+    "specialOffer": "特别优惠",
+    "jackpotAlert": "头奖提醒"
+  },
+  "lottoBanner": {
+    "title": "美国强力球 & 超级百万",
+    "description": "今天就赢取世界级头奖！通过美国授权代理商提供的特殊商品采购服务。"
+  }
+}

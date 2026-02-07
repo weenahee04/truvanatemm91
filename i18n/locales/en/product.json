@@ -1,0 +1,15 @@
+{
+  "breadcrumbHome": "Home",
+  "reviews": "reviews",
+  "sold": "sold",
+  "memberPrice": "Special price for Truvamate members only",
+  "quantity": "Quantity:",
+  "inStock": "{{count}} items in stock",
+  "addToCart": "Add to Cart",
+  "buyNow": "Buy Now",
+  "shippingTitle": "Shipped from USA",
+  "shippingDesc": "Delivery takes 10-14 business days (Air Freight). Free shipping on orders over ฿2,500",
+  "warrantyTitle": "Warranty",
+  "warrantyDesc": "100% authentic guarantee. Full refund if found counterfeit within 7 days",
+  "productDetails": "Product Details"
+}

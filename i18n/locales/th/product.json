@@ -1,0 +1,15 @@
+{
+  "breadcrumbHome": "หน้าแรก",
+  "reviews": "รีวิว",
+  "sold": "ขายแล้ว",
+  "memberPrice": "ราคาพิเศษเฉพาะสมาชิก Truvamate เท่านั้น",
+  "quantity": "จำนวน:",
+  "inStock": "มีสินค้า {{count}} ชิ้น",
+  "addToCart": "เพิ่มลงตะกร้า",
+  "buyNow": "ซื้อเลย",
+  "shippingTitle": "จัดส่งจาก USA",
+  "shippingDesc": "ใช้เวลา 10-14 วันทำการ (Air Freight) ฟรีค่าจัดส่งเมื่อช้อปครบ 2,500 บาท",
+  "warrantyTitle": "การรับประกัน",
+  "warrantyDesc": "รับประกันของแท้ 100% ยินดีคืนเงินหากพบว่าเป็นของปลอมภายใน 7 วัน",
+  "productDetails": "รายละเอียดสินค้า"
+}

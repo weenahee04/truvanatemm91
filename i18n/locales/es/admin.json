@@ -1,0 +1,35 @@
+{
+  "panel": {
+    "title": "Panel de administración",
+    "dashboard": "Panel",
+    "users": "Usuarios",
+    "orders": "Pedidos",
+    "products": "Productos",
+    "payments": "Pagos",
+    "billing": "Facturación",
+    "settings": "Configuración",
+    "sellers": "Vendedores",
+    "referrals": "Referidos",
+    "lottoOrders": "Pedidos de productos especiales",
+    "ocrScanner": "Escáner OCR",
+    "photoUpload": "Subir fotos",
+    "drivePhotos": "Fotos de Drive",
+    "ticketPricing": "Precios de boletos",
+    "paymentSettings": "Configuración de pagos",
+    "exchangeRate": "Tipo de cambio",
+    "management": "Gestión de admins",
+    "location": "Análisis de ubicación",
+    "logout": "Cerrar sesión"
+  },
+  "common": {
+    "search": "Buscar...",
+    "filter": "Filtrar",
+    "export": "Exportar",
+    "refresh": "Actualizar",
+    "actions": "Acciones",
+    "status": "Estado",
+    "date": "Fecha",
+    "total": "Total",
+    "details": "Detalles"
+  }
+}

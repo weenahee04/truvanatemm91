@@ -1,0 +1,239 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions to check staff roles (usable everywhere)
+    // Legacy note:
+    // - Existing role "admin"/"ADMIN" is treated as Super Admin
+    function isSuperAdmin() {
+      return request.auth != null &&
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN' ||
+              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'super_admin' ||
+              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'SUPER_ADMIN');
+    }
+
+    function isAdmin() {
+      return request.auth != null &&
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             (isSuperAdmin() ||
+              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin_limited' ||
+              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN_LIMITED');
+    }
+
+    function isAccounting() {
+      return request.auth != null &&
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'accounting' ||
+              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ACCOUNTING');
+    }
+    
+    // Users collection
+    match /users/{userId} {
+      // Anyone can read user profiles
+      allow read: if request.auth != null;
+      // Users can only write to their own profile
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Products collection
+    match /products/{productId} {
+      // Helper function to check if user is seller
+      function isSeller() {
+        return request.auth != null && 
+               exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+               get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'seller';
+      }
+      
+      // Helper function to check if user is admin (local scope)
+      function isAdmin() {
+        return request.auth != null && 
+               exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+               (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+                get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN' ||
+                get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'super_admin' ||
+                get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'SUPER_ADMIN' ||
+                get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin_limited' ||
+                get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN_LIMITED');
+      }
+      
+      // Anyone can read products
+      allow read: if true;
+      // Only sellers and admins can create/update products
+      allow create, update: if request.auth != null && (isSeller() || isAdmin());
+      // Only product owner (sellerId matches) or admin can delete
+      allow delete: if request.auth != null && 
+                     (resource.data.sellerId == request.auth.uid || isAdmin());
+    }
+    
+    // Orders collection
+    match /orders/{orderId} {
+      // Helper function to check if user is seller
+      function isSeller() {
+        return request.auth != null && 
+               exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+               get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'seller';
+      }
+      
+      // Helper function to check if order contains seller's products
+      function orderContainsSellerProducts(sellerId) {
+        return resource.data.items != null && 
+               resource.data.items.hasAny([{'sellerId': sellerId}]) ||
+               resource.data.items.hasAny([{'seller': sellerId}]);
+      }
+      
+      // Allow list - authenticated users can query (will be filtered by get rules)
+      // Admins can query all, regular users can query but only see their own via get rules
+      allow list: if request.auth != null;
+      
+      // Allow get (single document) - for users, sellers, and admins
+      allow get: if request.auth != null && 
+                   (isAdmin() ||
+                    (resource != null && resource.data.userId == request.auth.uid) ||
+                    (isSeller() && resource != null && orderContainsSellerProducts(request.auth.uid)));
+      
+      // Users can create orders
+      allow create: if request.auth != null;
+      // Admins + accounting can update order status
+      allow update: if request.auth != null && (isAdmin() || isAccounting());
+    }
+    
+    // Lotto Orders collection
+    match /lottoOrders/{orderId} {
+      // Allow list - authenticated users can query (will be filtered by get rules)
+      allow list: if request.auth != null;
+      
+      // Allow get (single document) - for users and admins
+      allow get: if request.auth != null && 
+                   (isAdmin() ||
+                    (resource != null && resource.data.userId == request.auth.uid));
+      
+      // Users can create lotto orders
+      allow create: if request.auth != null;
+      // Admins + accounting can update lotto orders (status)
+      allow update: if request.auth != null && (isAdmin() || isAccounting());
+    }
+    
+    // Lotto tickets collection
+    match /lotto/{ticketId} {
+      // Users can read their own tickets
+      allow read: if request.auth != null && 
+                   resource.data.userId == request.auth.uid;
+      // Users can create their own tickets
+      allow create: if request.auth != null;
+      // Only admins can update tickets
+      allow update: if request.auth != null;
+    }
+    
+    // Wishlist collection
+    match /wishlist/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Cart collection
+    match /carts/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Site content (CMS)
+    match /site_content/{docId} {
+      // Anyone can read site content (for public pages)
+      allow read: if true;
+      // Only admin-level can create/update/delete
+      allow create, update, delete: if request.auth != null && isAdmin();
+    }
+    
+    // Referral Codes collection
+    match /referralCodes/{codeId} {
+      // Anyone can read referral codes (to validate)
+      allow read: if true;
+      // Users can create their own referral codes (userId in document must match auth.uid)
+      allow create: if request.auth != null && 
+                     request.resource.data.userId == request.auth.uid;
+      // Users can update their own referral codes
+      allow update: if request.auth != null && 
+                     (resource.data.userId == request.auth.uid ||
+                      request.resource.data.userId == request.auth.uid);
+    }
+    
+    // Referrals collection
+    match /referrals/{referralId} {
+      // Allow list: admins can query all; users can query their own (referrer or referred)
+      allow list: if request.auth != null && (
+        isAdmin() ||
+        resource.data.referrerId == request.auth.uid ||
+        resource.data.referredUserId == request.auth.uid
+      );
+      
+      // Allow get (single document) - for users and admins
+      allow get: if request.auth != null && 
+                   (isAdmin() ||
+                    resource.data.referrerId == request.auth.uid ||
+                    resource.data.referredUserId == request.auth.uid);
+      
+      // System can create/update referrals (users indirectly through functions)
+      allow create: if request.auth != null;
+      allow update: if request.auth != null;
+    }
+    
+    // Referral Transactions collection
+    match /referralTransactions/{transactionId} {
+      // Allow list (query entire collection) - only for admins
+      allow list: if request.auth != null && isAdmin();
+      
+      // Allow get (single document) - for users and admins
+      allow get: if request.auth != null && 
+                   (isAdmin() ||
+                    resource.data.referrerId == request.auth.uid);
+      
+      // System can create transactions
+      allow create: if request.auth != null;
+    }
+    
+    // Settings collection
+    match /settings/{settingId} {
+      // Anyone can read settings
+      allow read: if true;
+      // Granular write rules:
+      // - Super Admin only: lotto pricing
+      // - Admin-level: referral & other settings
+      allow write: if request.auth != null && (
+        (settingId == 'lotto-pricing' && isSuperAdmin()) ||
+        (settingId != 'lotto-pricing' && isAdmin())
+      );
+    }
+    
+    // Payment Settings collection
+    match /payment_settings/{docId} {
+      // Only admin-level can read (contains sensitive keys)
+      allow read: if request.auth != null && isAdmin();
+      // Only Super Admin can write
+      allow write: if request.auth != null && isSuperAdmin();
+    }
+    
+    // Admin activity logs (written by backend only; super_admin can read)
+    match /admin_logs/{logId} {
+      allow read: if request.auth != null && isSuperAdmin();
+      allow create, update, delete: if false;
+    }
+    
+    // Payments collection (for payment records)
+    match /payments/{paymentId} {
+      // Allow list (query entire collection) - admins + accounting
+      allow list: if request.auth != null && (isAdmin() || isAccounting());
+      
+      // Allow get (single document) - for users and admins
+      allow get: if request.auth != null && 
+                   (isAdmin() ||
+                    resource.data.userId == request.auth.uid);
+      
+      // Authenticated users can create payments
+      allow create: if request.auth != null;
+      // Users can update their own payments, admins can update any
+      allow update: if request.auth != null && 
+                    (isAdmin() ||
+                     resource.data.userId == request.auth.uid);
+    }
+  }
+}

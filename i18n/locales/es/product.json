@@ -1,0 +1,15 @@
+{
+  "breadcrumbHome": "Inicio",
+  "reviews": "reseñas",
+  "sold": "vendidos",
+  "memberPrice": "Precio especial solo para miembros Truvamate",
+  "quantity": "Cantidad:",
+  "inStock": "{{count}} artículos en stock",
+  "addToCart": "Añadir al carrito",
+  "buyNow": "Comprar ahora",
+  "shippingTitle": "Enviado desde USA",
+  "shippingDesc": "Entrega en 10-14 días hábiles (flete aéreo). Envío gratis en pedidos mayores a ฿2,500",
+  "warrantyTitle": "Garantía",
+  "warrantyDesc": "Garantía 100% auténtico. Reembolso total si se encuentra falsificación en 7 días",
+  "productDetails": "Detalles del producto"
+}

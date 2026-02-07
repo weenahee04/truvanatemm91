@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100% Authentic",
+    "authenticDesc": "Verified every item",
+    "directFromUSA": "Direct from USA",
+    "directFromUSADesc": "Customs cleared",
+    "securePayment": "Secure Payment",
+    "securePaymentDesc": "All Thai banks supported",
+    "fastShipping": "Fast 7-14 Days",
+    "fastShippingDesc": "For Air Freight items"
+  },
+  "sections": {
+    "popularCategories": "Popular Categories",
+    "flashSale": "FLASH SALE",
+    "bestSellers": "Best Sellers This Week",
+    "noFlashSale": "No Flash Sale products available",
+    "noProducts": "No products available yet",
+    "specialOffer": "SPECIAL OFFER",
+    "jackpotAlert": "Jackpot Alert"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "Win world-class jackpot prizes today! Purchasing service for special products from authorized agents in the United States."
+  }
+}

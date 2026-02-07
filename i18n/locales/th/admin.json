@@ -1,0 +1,35 @@
+{
+  "panel": {
+    "title": "แผงควบคุม Admin",
+    "dashboard": "แดชบอร์ด",
+    "users": "ผู้ใช้",
+    "orders": "คำสั่งซื้อ",
+    "products": "สินค้า",
+    "payments": "การเงิน",
+    "billing": "ออกบิล",
+    "settings": "ตั้งค่า",
+    "sellers": "ร้านค้า",
+    "referrals": "แนะนำเพื่อน",
+    "lottoOrders": "คำสั่งซื้อสินค้าพิเศษ",
+    "ocrScanner": "สแกน OCR",
+    "photoUpload": "อัพโหลดรูป",
+    "drivePhotos": "รูปจาก Drive",
+    "ticketPricing": "ตั้งราคาตั๋ว",
+    "paymentSettings": "ตั้งค่าการชำระเงิน",
+    "exchangeRate": "อัตราแลกเปลี่ยน",
+    "management": "จัดการ Admin",
+    "location": "วิเคราะห์ตำแหน่ง",
+    "logout": "ออกจากระบบ"
+  },
+  "common": {
+    "search": "ค้นหา...",
+    "filter": "กรอง",
+    "export": "ส่งออก",
+    "refresh": "รีเฟรช",
+    "actions": "การดำเนินการ",
+    "status": "สถานะ",
+    "date": "วันที่",
+    "total": "รวม",
+    "details": "รายละเอียด"
+  }
+}

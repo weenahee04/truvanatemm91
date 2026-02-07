@@ -1,0 +1,17 @@
+{
+  "title": "购物车",
+  "titleWithCount": "购物车（{{count}}件商品）",
+  "empty": {
+    "title": "购物车为空",
+    "description": "购物车里还没有商品。快来浏览美国优质商品吧！"
+  },
+  "summary": {
+    "title": "订单摘要",
+    "subtotal": "小计（{{count}}件）",
+    "shipping": "运费（空运）",
+    "discount": "折扣",
+    "total": "合计",
+    "discountCode": "输入优惠码"
+  },
+  "option": "选项：{{option}}"
+}
