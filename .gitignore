@@ -25,7 +25,6 @@ dist-ssr
 
 .vercel
 .env*.local
-pages/Lotto.tsx
 
 # Secrets & sensitive files
 backend/serviceAccountKey.json

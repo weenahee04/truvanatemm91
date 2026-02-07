@@ -44,6 +44,7 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 import { AdminManagement } from './pages/AdminManagement';
 import AdminExchangeRate from './pages/AdminExchangeRate';
 import { AdminActivityLogger } from './components/AdminActivityLogger';
+import { WinnersHistory } from './pages/WinnersHistory';
 
 // Alias for better naming
 const SpecialProducts = Lotto;
@@ -101,6 +102,7 @@ const App: React.FC = () => {
             <Route path="/lotto" element={<SpecialProducts />} />
             <Route path="/special-products-legal" element={<SpecialProductsLegal />} />
             <Route path="/lotto-legal" element={<SpecialProductsLegal />} />
+            <Route path="/winners" element={<WinnersHistory />} />
             <Route path="/legal" element={<Legal />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/how-to-use" element={<HowToUse />} />
