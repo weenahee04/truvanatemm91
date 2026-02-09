@@ -199,7 +199,6 @@ export const Checkout: React.FC = () => {
         cancelUrl: `${window.location.origin}/checkout?payment=cancel`,
         customerEmail: user?.email,
         isLotto: isLotto,
-        uiMode: checkoutMode, // 'hosted' or 'embedded'
       });
       
       // Save order data to localStorage after creating checkout session
@@ -213,11 +212,12 @@ export const Checkout: React.FC = () => {
         paymentMethod: 'stripe_checkout',
         createdAt: new Date().toISOString(),
         userEmail: user?.email || 'guest',
-        // For lotto: save original tickets and product count
+        // For lotto: save original tickets, product count, and advance draws
         ...(isLotto && {
           originalTickets: lottoTickets,
           ticketCount: lottoTickets.length,
           productCount: calculateLottoProducts(lottoTickets.length),
+          numDraws: numDraws,
         }),
       };
       localStorage.setItem(`order_${newOrderId}`, JSON.stringify(orderData));
@@ -367,6 +367,7 @@ export const Checkout: React.FC = () => {
             
             // Include draw date (default to next draw)
             orderToSave.drawDate = orderData.drawDate || new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]; // 3 days from now
+            orderToSave.numDraws = orderData.numDraws || numDraws || 1; // Advance play draws
             
             console.log('🎫 Lotto Order Tickets Info:', {
               ticketCount: finalTickets.length,
@@ -454,6 +455,7 @@ export const Checkout: React.FC = () => {
   // Logic to handle Special Products Checkout vs Normal Cart Checkout
   const isLotto = location.state?.source === 'special-products' || location.state?.source === 'lotto';
   const lottoTickets = location.state?.tickets || [];
+  const numDraws: number = location.state?.numDraws || 1; // Advance play: number of draws
   
   // Determine Items
   const items = isLotto ? lottoTickets : cart;
@@ -478,9 +480,10 @@ export const Checkout: React.FC = () => {
     }
   }, [isLotto]);
 
-  const subtotal = isLotto 
+  const subtotalPerDraw = isLotto 
     ? lottoTickets.length * ticketPrice 
     : cart.reduce((sum, item) => sum + (item.priceTHB * item.quantity), 0);
+  const subtotal = isLotto ? subtotalPerDraw * numDraws : subtotalPerDraw;
   
   const shipping = isLotto ? 0 : (subtotal > 2500 ? 0 : 45);
   const total = subtotal + shipping;
@@ -927,6 +930,7 @@ export const Checkout: React.FC = () => {
               orderToSave.customerAddress = address;
             }
             orderToSave.drawDate = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+            orderToSave.numDraws = numDraws || 1;
             
             console.log('🎫 Lotto Order Tickets Info (Card Payment):', {
               ticketCount: lottoTickets.length,
@@ -985,6 +989,7 @@ export const Checkout: React.FC = () => {
               orderToSave.customerAddress = address;
             }
             orderToSave.drawDate = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+            orderToSave.numDraws = numDraws || 1;
             
             console.log('🎫 Lotto Order Tickets Info (Card Payment):', {
               ticketCount: lottoTickets.length,
@@ -1073,6 +1078,7 @@ export const Checkout: React.FC = () => {
               orderToSave.customerAddress = address;
             }
             orderToSave.drawDate = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]; // 3 days from now
+            orderToSave.numDraws = numDraws || 1;
             
             console.log('🎫 Lotto Order Tickets Info (Card Payment):', {
               ticketCount: lottoTickets.length,
@@ -1776,6 +1782,12 @@ export const Checkout: React.FC = () => {
                       }
                     </span>
                         </div>
+                  {isLotto && numDraws > 1 && (
+                    <div className="flex justify-between">
+                      <span className="text-slate-600">Advance Play</span>
+                      <span className="font-medium text-brand-navy">{numDraws} งวด ({lottoTickets.length} × {numDraws} = {lottoTickets.length * numDraws} ใบ)</span>
+                    </div>
+                  )}
                   <div className="flex justify-between">
                     <span className="text-slate-600">{t('subtotal')}</span>
                     <span className="font-medium">฿{subtotal.toLocaleString()}</span>

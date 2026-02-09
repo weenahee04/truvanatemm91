@@ -103,6 +103,7 @@ export const Lotto: React.FC = () => {
   const [tempNumbers, setTempNumbers] = useState<number[]>([]);
   const [tempSpecial, setTempSpecial] = useState<number | null>(null);
   const [acceptedTerms, setAcceptedTerms] = useState(false); // State for accepting terms
+  const [numDraws, setNumDraws] = useState(1); // Number of advance draws (1 = current draw only)
 
   // Load ticket prices from Firestore for both games
   useEffect(() => {
@@ -260,7 +261,7 @@ export const Lotto: React.FC = () => {
     // Save tickets to localStorage before navigating (already saved via useEffect, but ensure it's saved)
     localStorage.setItem('truvamate_lotto_tickets', JSON.stringify(tickets));
     
-    navigate('/checkout', { state: { source: 'special-products', tickets: tickets } });
+    navigate('/checkout', { state: { source: 'special-products', tickets: tickets, numDraws: numDraws } });
   };
 
   const currentRule = GAME_RULES[activeGame];
@@ -666,15 +667,61 @@ export const Lotto: React.FC = () => {
             <Plus size={20} /> Add {activeGame} Ticket
           </button>
 
+          {/* Advance Draws Selector */}
+          {tickets.length > 0 && (
+            <div className="bg-gradient-to-r from-slate-50 to-blue-50 border border-slate-200 rounded-xl p-4 md:p-6 mb-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-10 w-10 bg-brand-navy rounded-full flex items-center justify-center text-white shrink-0">
+                  <Calendar size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-900 text-sm md:text-base">Advance Play — ซื้อล่วงหน้าหลายงวด</h3>
+                  <p className="text-xs text-slate-500">เลือกจำนวนงวดที่ต้องการ ระบบจะซื้อเลขชุดเดียวกันให้ทุกงวดอัตโนมัติ</p>
+                </div>
+              </div>
+              <div className="flex gap-2 flex-wrap">
+                {[1, 2, 3, 5, 10].map(n => (
+                  <button
+                    key={n}
+                    onClick={() => setNumDraws(n)}
+                    className={`px-4 py-2.5 rounded-lg font-bold text-sm transition-all border-2 ${
+                      numDraws === n
+                        ? 'bg-brand-navy text-white border-brand-navy shadow-md scale-105'
+                        : 'bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy'
+                    }`}
+                  >
+                    {n === 1 ? '1 งวด (ปัจจุบัน)' : `${n} งวด`}
+                  </button>
+                ))}
+              </div>
+              {numDraws > 1 && (
+                <div className="mt-3 bg-white rounded-lg p-3 border border-slate-200">
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle2 size={16} className="text-green-500" />
+                    <span className="text-slate-700">
+                      เลขชุดเดียวกัน <strong>{tickets.length} ใบ</strong> × <strong>{numDraws} งวด</strong> = <strong>{tickets.length * numDraws} ใบ</strong> รวม
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-400 mt-1 ml-6">ระบบจะซื้อให้อัตโนมัติทุกงวดจนครบ {numDraws} งวด</p>
+                </div>
+              )}
+            </div>
+          )}
+
           <div className="border-t border-slate-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-6">
              <div className="text-center sm:text-left">
-                <div className="text-slate-500 text-sm font-medium">Total Amount ({tickets.length} Tickets)</div>
+                <div className="text-slate-500 text-sm font-medium">Total Amount ({tickets.length} Tickets × {numDraws} Draw{numDraws > 1 ? 's' : ''})</div>
                 <div className="text-4xl font-black text-slate-900">
-                  ${tickets.reduce((total, ticket) => {
+                  ${(tickets.reduce((total, ticket) => {
                     const ticketPrice = ticket.type === 'Powerball' ? pricingData['Powerball'] : pricingData['Mega Millions'];
                     return total + ticketPrice;
-                  }, 0).toLocaleString()} USD
+                  }, 0) * numDraws).toLocaleString()} USD
                 </div>
+                {numDraws > 1 && (
+                  <div className="text-xs text-brand-navy font-semibold mt-1 flex items-center gap-1 justify-center sm:justify-start">
+                    <Calendar size={12} /> Advance Play: {numDraws} draws
+                  </div>
+                )}
                 <div className="text-[10px] text-slate-400 mt-1 flex items-center gap-1 justify-center sm:justify-start">
                   * Price: Powerball $5 USD, Mega Millions $11 USD per Ticket
                </div>
