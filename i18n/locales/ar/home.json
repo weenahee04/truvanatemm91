@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "أصلي 100%",
+    "authenticDesc": "تم التحقق من كل منتج",
+    "directFromUSA": "مباشرة من أمريكا",
+    "directFromUSADesc": "تخليص جمركي",
+    "securePayment": "دفع آمن",
+    "securePaymentDesc": "جميع البنوك مدعومة",
+    "fastShipping": "شحن سريع 7-14 يوم",
+    "fastShippingDesc": "للشحن الجوي"
+  },
+  "sections": {
+    "popularCategories": "الفئات الشائعة",
+    "flashSale": "تخفيضات سريعة",
+    "bestSellers": "الأكثر مبيعاً هذا الأسبوع",
+    "noFlashSale": "لا توجد منتجات تخفيضات سريعة",
+    "noProducts": "لا توجد منتجات متاحة حالياً",
+    "specialOffer": "عرض خاص",
+    "jackpotAlert": "تنبيه الجائزة الكبرى"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "اربح جوائز عالمية اليوم! خدمة شراء المنتجات الخاصة من وكلاء معتمدين في الولايات المتحدة."
+  }
+}

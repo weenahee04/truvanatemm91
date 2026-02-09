@@ -1,0 +1,7 @@
+{
+  "title": "Giỏ hàng",
+  "titleWithCount": "Giỏ hàng ({{count}} sản phẩm)",
+  "empty": { "title": "Giỏ hàng trống", "description": "Chưa có sản phẩm nào. Khám phá sản phẩm chất lượng từ Mỹ!" },
+  "summary": { "title": "Tóm tắt đơn hàng", "subtotal": "Tạm tính ({{count}} sản phẩm)", "shipping": "Phí vận chuyển (Hàng không)", "discount": "Giảm giá", "total": "Tổng cộng", "discountCode": "Nhập mã giảm giá" },
+  "option": "Tùy chọn: {{option}}"
+}

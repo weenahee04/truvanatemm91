@@ -93,6 +93,81 @@ import deCategory from './locales/de/category.json';
 import deReferral from './locales/de/referral.json';
 import deMissions from './locales/de/missions.json';
 
+import arCommon from './locales/ar/common.json';
+import arHome from './locales/ar/home.json';
+import arAuth from './locales/ar/auth.json';
+import arCart from './locales/ar/cart.json';
+import arCheckout from './locales/ar/checkout.json';
+import arProfile from './locales/ar/profile.json';
+import arSeller from './locales/ar/seller.json';
+import arAdmin from './locales/ar/admin.json';
+import arLotto from './locales/ar/lotto.json';
+import arPages from './locales/ar/pages.json';
+import arProduct from './locales/ar/product.json';
+import arCategory from './locales/ar/category.json';
+import arReferral from './locales/ar/referral.json';
+import arMissions from './locales/ar/missions.json';
+
+import jaCommon from './locales/ja/common.json';
+import jaHome from './locales/ja/home.json';
+import jaAuth from './locales/ja/auth.json';
+import jaCart from './locales/ja/cart.json';
+import jaCheckout from './locales/ja/checkout.json';
+import jaProfile from './locales/ja/profile.json';
+import jaSeller from './locales/ja/seller.json';
+import jaAdmin from './locales/ja/admin.json';
+import jaLotto from './locales/ja/lotto.json';
+import jaPages from './locales/ja/pages.json';
+import jaProduct from './locales/ja/product.json';
+import jaCategory from './locales/ja/category.json';
+import jaReferral from './locales/ja/referral.json';
+import jaMissions from './locales/ja/missions.json';
+
+import koCommon from './locales/ko/common.json';
+import koHome from './locales/ko/home.json';
+import koAuth from './locales/ko/auth.json';
+import koCart from './locales/ko/cart.json';
+import koCheckout from './locales/ko/checkout.json';
+import koProfile from './locales/ko/profile.json';
+import koSeller from './locales/ko/seller.json';
+import koAdmin from './locales/ko/admin.json';
+import koLotto from './locales/ko/lotto.json';
+import koPages from './locales/ko/pages.json';
+import koProduct from './locales/ko/product.json';
+import koCategory from './locales/ko/category.json';
+import koReferral from './locales/ko/referral.json';
+import koMissions from './locales/ko/missions.json';
+
+import viCommon from './locales/vi/common.json';
+import viHome from './locales/vi/home.json';
+import viAuth from './locales/vi/auth.json';
+import viCart from './locales/vi/cart.json';
+import viCheckout from './locales/vi/checkout.json';
+import viProfile from './locales/vi/profile.json';
+import viSeller from './locales/vi/seller.json';
+import viAdmin from './locales/vi/admin.json';
+import viLotto from './locales/vi/lotto.json';
+import viPages from './locales/vi/pages.json';
+import viProduct from './locales/vi/product.json';
+import viCategory from './locales/vi/category.json';
+import viReferral from './locales/vi/referral.json';
+import viMissions from './locales/vi/missions.json';
+
+import idCommon from './locales/id/common.json';
+import idHome from './locales/id/home.json';
+import idAuth from './locales/id/auth.json';
+import idCart from './locales/id/cart.json';
+import idCheckout from './locales/id/checkout.json';
+import idProfile from './locales/id/profile.json';
+import idSeller from './locales/id/seller.json';
+import idAdmin from './locales/id/admin.json';
+import idLotto from './locales/id/lotto.json';
+import idPages from './locales/id/pages.json';
+import idProduct from './locales/id/product.json';
+import idCategory from './locales/id/category.json';
+import idReferral from './locales/id/referral.json';
+import idMissions from './locales/id/missions.json';
+
 export const supportedLanguages = [
   { code: 'th', label: 'ไทย', flag: '🇹🇭' },
   { code: 'en', label: 'English', flag: '🇺🇸' },
@@ -100,6 +175,11 @@ export const supportedLanguages = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
   { code: 'es', label: 'Español', flag: '🇪🇸' },
   { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦' },
+  { code: 'ja', label: '日本語', flag: '🇯🇵' },
+  { code: 'ko', label: '한국어', flag: '🇰🇷' },
+  { code: 'vi', label: 'Tiếng Việt', flag: '🇻🇳' },
+  { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩' },
 ] as const;
 
 export type LanguageCode = (typeof supportedLanguages)[number]['code'];
@@ -204,6 +284,86 @@ i18n
         category: deCategory,
         referral: deReferral,
         missions: deMissions,
+      },
+      ar: {
+        common: arCommon,
+        home: arHome,
+        auth: arAuth,
+        cart: arCart,
+        checkout: arCheckout,
+        profile: arProfile,
+        seller: arSeller,
+        admin: arAdmin,
+        lotto: arLotto,
+        pages: arPages,
+        product: arProduct,
+        category: arCategory,
+        referral: arReferral,
+        missions: arMissions,
+      },
+      ja: {
+        common: jaCommon,
+        home: jaHome,
+        auth: jaAuth,
+        cart: jaCart,
+        checkout: jaCheckout,
+        profile: jaProfile,
+        seller: jaSeller,
+        admin: jaAdmin,
+        lotto: jaLotto,
+        pages: jaPages,
+        product: jaProduct,
+        category: jaCategory,
+        referral: jaReferral,
+        missions: jaMissions,
+      },
+      ko: {
+        common: koCommon,
+        home: koHome,
+        auth: koAuth,
+        cart: koCart,
+        checkout: koCheckout,
+        profile: koProfile,
+        seller: koSeller,
+        admin: koAdmin,
+        lotto: koLotto,
+        pages: koPages,
+        product: koProduct,
+        category: koCategory,
+        referral: koReferral,
+        missions: koMissions,
+      },
+      vi: {
+        common: viCommon,
+        home: viHome,
+        auth: viAuth,
+        cart: viCart,
+        checkout: viCheckout,
+        profile: viProfile,
+        seller: viSeller,
+        admin: viAdmin,
+        lotto: viLotto,
+        pages: viPages,
+        product: viProduct,
+        category: viCategory,
+        referral: viReferral,
+        missions: viMissions,
+      },
+      id: {
+        common: idCommon,
+        home: idHome,
+        auth: idAuth,
+        cart: idCart,
+        checkout: idCheckout,
+        profile: idProfile,
+        seller: idSeller,
+        admin: idAdmin,
+        lotto: idLotto,
+        pages: idPages,
+        product: idProduct,
+        category: idCategory,
+        referral: idReferral,
+        missions: idMissions,
       },
     },
     fallbackLng: 'th',

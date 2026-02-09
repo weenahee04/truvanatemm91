@@ -1,0 +1,35 @@
+{
+  "panel": {
+    "title": "管理パネル",
+    "dashboard": "ダッシュボード",
+    "users": "ユーザー",
+    "orders": "注文",
+    "products": "商品",
+    "payments": "支払い",
+    "billing": "請求",
+    "settings": "設定",
+    "sellers": "セラー",
+    "referrals": "紹介",
+    "lottoOrders": "特別商品注文",
+    "ocrScanner": "OCRスキャナー",
+    "photoUpload": "写真アップロード",
+    "drivePhotos": "Drive写真",
+    "ticketPricing": "チケット価格設定",
+    "paymentSettings": "支払い設定",
+    "exchangeRate": "為替レート",
+    "management": "管理者管理",
+    "location": "位置分析",
+    "logout": "ログアウト"
+  },
+  "common": {
+    "search": "検索...",
+    "filter": "フィルター",
+    "export": "エクスポート",
+    "refresh": "更新",
+    "actions": "アクション",
+    "status": "ステータス",
+    "date": "日付",
+    "total": "合計",
+    "details": "詳細"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Sản phẩm đặc biệt USA", "powerball": "Powerball", "megaMillions": "Mega Millions",
+  "jackpot": "Jackpot", "nextDraw": "Lần quay tiếp theo", "selectNumbers": "Chọn số",
+  "quickPick": "Chọn nhanh", "addTicket": "Thêm vé", "myTickets": "Vé của tôi",
+  "ticketPrice": "Giá vé", "multiplier": "Nhân", "drawHistory": "Lịch sử quay số", "orderHistory": "Lịch sử đơn hàng",
+  "status": { "pending": "Đang chờ", "confirmed": "Đã xác nhận", "purchased": "Đã mua", "won": "Trúng", "lost": "Không trúng" },
+  "legal": {
+    "title": "Điều khoản và điều kiện", "disclaimer": "Dịch vụ mua từ đại lý ủy quyền tại Mỹ.",
+    "backToSpecial": "Quay lại sản phẩm đặc biệt",
+    "pageTitle": "Thỏa thuận pháp lý<br/>Dịch vụ mua sản phẩm đặc biệt",
+    "pageDesc": "Giải thích về tư cách pháp lý, quyền sở hữu sản phẩm đặc biệt và điều khoản dịch vụ của Truvamate",
+    "section1Title": "1. Mô hình dịch vụ",
+    "section1Desc": "Truvamate hoạt động như <strong>\"Đại lý mua hàng\"</strong> duy nhất.",
+    "section1Detail": "<strong>Vai trò:</strong> Nhận đơn → Mua tại đại lý ủy quyền ở Mỹ → Gửi bằng chứng → Bảo quản an toàn",
+    "section2Title": "2. Quyền sở hữu sản phẩm",
+    "section2Item1": "<strong>Sản phẩm 100% thuộc về bạn:</strong> Quyền sở hữu chuyển ngay khi mua.",
+    "section2Item2": "<strong>Bằng chứng sở hữu:</strong> Ảnh kèm tên/mã tham chiếu là bằng chứng sở hữu.",
+    "section2Item3": "<strong>Bảo quản:</strong> Sản phẩm được giữ trong két an toàn cho đến khi giao.",
+    "section3Title": "3. Giao hàng & Thuế",
+    "section3LowValue": "Sản phẩm giá trị thấp", "section3LowValueDesc": "Giao sản phẩm và chuyển tiền vào tài khoản Truvamate.",
+    "section3HighValue": "Sản phẩm giá trị cao", "section3HighValueDesc": "Liên hệ trực tiếp với đội ngũ. Thuế theo luật Mỹ.",
+    "section3Tax": "* <strong>Thuế Mỹ:</strong> Người mua nước ngoài có thể phải chịu thuế theo quy định IRS.",
+    "section4Title": "4. Thẩm quyền", "section4Desc": "Dịch vụ này thuộc thẩm quyền Mỹ. Truvamate chỉ là người điều phối.",
+    "section4Warning": "Người dùng đồng ý rằng việc mua này là cho tiện lợi cá nhân và một số sản phẩm có thể bị hạn chế ở một số quốc gia.",
+    "footerNote": "Nếu có câu hỏi pháp lý, vui lòng liên hệ bộ phận pháp lý.", "contactUs": "Liên hệ", "acceptAndContinue": "Đồng ý và tiếp tục"
+  }
+}

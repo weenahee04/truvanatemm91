@@ -1,0 +1,10 @@
+{
+  "breadcrumbHome": "Beranda", "breadcrumbCategory": "Kategori", "allProducts": "Semua Produk",
+  "newProducts": "Produk Baru", "specialProducts": "Produk Spesial", "filters": "Filter",
+  "categories": "Kategori", "catVitamins": "Vitamin & Suplemen", "catFashion": "Fashion & Tas",
+  "catElectronics": "Elektronik", "catHome": "Rumah & Kehidupan", "priceRange": "Rentang Harga (THB)",
+  "search": "Cari", "rating": "Rating Produk", "star5": "5 Bintang", "star4up": "4 Bintang ke atas",
+  "star3up": "3 Bintang ke atas", "itemCount": "{{count}} item", "sortBy": "Urutkan:", "recommended": "Rekomendasi",
+  "loading": "Memuat produk...", "lottoDesc": "Menangkan hadiah jackpot kelas dunia",
+  "pickNumbers": "Pilih nomor Anda", "noProducts": "Produk tidak ditemukan", "noProductsDesc": "Belum ada produk di kategori ini"
+}

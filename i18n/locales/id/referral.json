@@ -1,0 +1,14 @@
+{
+  "pageTitle": "Program Referral", "pageDesc": "Ajak teman dan dapatkan 10% komisi!", "pleaseLogin": "Silakan masuk",
+  "login": "Masuk", "loadError": "Tidak bisa memuat data", "codeCopied": "Kode disalin!", "linkCopied": "Link disalin!",
+  "shareText": "Daftar Truvamate lewat link saya dan dapatkan diskon!", "referredFriends": "Teman yang Diajak",
+  "purchased": "Sudah beli", "totalEarnings": "Total Pendapatan", "pendingPayout": "Menunggu",
+  "yourCode": "Kode Anda", "copiedBtn": "Disalin!", "copyCode": "Salin Kode", "copyLink": "Salin Link",
+  "shareTo": "Bagikan ke:", "howToUse": "Cara pakai:", "howToStep1": "Bagikan kode ke teman",
+  "howToStep2": "Teman mendaftar dengan kode", "howToStep3": "Teman melakukan pembelian pertama",
+  "howToStep4": "Anda mendapat 10% dari pembelian!", "friendsReferred": "Teman yang Diajak",
+  "noFriendsYet": "Belum ada teman yang diajak", "startSharing": "Mulai bagikan kode sekarang!",
+  "paid": "Dibayar", "waitingPurchase": "Menunggu", "commissionTerms": "Syarat Komisi:",
+  "term1": "Teman harus mendaftar dengan kode Anda", "term2": "Teman harus belanja pertama min ฿500",
+  "term3": "Anda mendapat 10% dari pembelian (maks ฿500/orang)", "term4": "Komisi dibayar 7-14 hari setelah teman terima produk"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Produk Spesial USA", "powerball": "Powerball", "megaMillions": "Mega Millions",
+  "jackpot": "Jackpot", "nextDraw": "Undian Berikutnya", "selectNumbers": "Pilih Nomor",
+  "quickPick": "Pilih Cepat", "addTicket": "Tambah Tiket", "myTickets": "Tiket Saya",
+  "ticketPrice": "Harga tiket", "multiplier": "Pengali", "drawHistory": "Riwayat Undian", "orderHistory": "Riwayat Pesanan",
+  "status": { "pending": "Menunggu", "confirmed": "Dikonfirmasi", "purchased": "Dibeli", "won": "Menang", "lost": "Kalah" },
+  "legal": {
+    "title": "Syarat dan Ketentuan", "disclaimer": "Layanan pembelian dari agen resmi di Amerika Serikat.",
+    "backToSpecial": "Kembali ke Produk Spesial",
+    "pageTitle": "Perjanjian Hukum<br/>Layanan Pembelian Produk Spesial",
+    "pageDesc": "Penjelasan status hukum, kepemilikan produk spesial, dan syarat layanan Truvamate",
+    "section1Title": "1. Model Layanan",
+    "section1Desc": "Truvamate beroperasi sebagai <strong>\"Agen Pembelian\"</strong> saja.",
+    "section1Detail": "<strong>Peran kami:</strong> Terima pesanan → Beli di agen resmi USA → Kirim bukti → Simpan aman",
+    "section2Title": "2. Kepemilikan Produk",
+    "section2Item1": "<strong>Produk 100% milik Anda:</strong> Kepemilikan langsung berpindah saat pembelian.",
+    "section2Item2": "<strong>Bukti kepemilikan:</strong> Foto dengan nama/kode referensi Anda.",
+    "section2Item3": "<strong>Penyimpanan:</strong> Produk disimpan di brankas sampai pengiriman.",
+    "section3Title": "3. Pengiriman & Pajak",
+    "section3LowValue": "Produk Nilai Rendah", "section3LowValueDesc": "Kami kirim produk dan transfer dana ke akun Truvamate Anda.",
+    "section3HighValue": "Produk Nilai Tinggi", "section3HighValueDesc": "Hubungi tim kami langsung. Pajak sesuai hukum AS.",
+    "section3Tax": "* <strong>Pajak AS:</strong> Pembeli asing mungkin dikenakan pajak sesuai regulasi IRS.",
+    "section4Title": "4. Yurisdiksi", "section4Desc": "Layanan ini di bawah yurisdiksi AS. Truvamate hanya sebagai koordinator.",
+    "section4Warning": "Pengguna setuju bahwa pembelian ini untuk kenyamanan pribadi dan beberapa produk mungkin dibatasi di negara tertentu.",
+    "footerNote": "Jika ada pertanyaan hukum, hubungi departemen hukum kami.", "contactUs": "Hubungi Kami", "acceptAndContinue": "Setuju dan Lanjutkan"
+  }
+}

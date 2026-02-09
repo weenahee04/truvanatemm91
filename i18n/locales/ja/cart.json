@@ -1,0 +1,17 @@
+{
+  "title": "ショッピングカート",
+  "titleWithCount": "ショッピングカート（{{count}}点）",
+  "empty": {
+    "title": "カートは空です",
+    "description": "まだ商品がありません。アメリカの高品質商品をご覧ください！"
+  },
+  "summary": {
+    "title": "注文概要",
+    "subtotal": "小計（{{count}}点）",
+    "shipping": "送料（航空便）",
+    "discount": "割引",
+    "total": "合計",
+    "discountCode": "割引コードを入力"
+  },
+  "option": "オプション: {{option}}"
+}

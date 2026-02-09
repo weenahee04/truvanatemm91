@@ -1,0 +1,4 @@
+{
+  "panel": { "title": "Bảng quản trị", "dashboard": "Tổng quan", "users": "Người dùng", "orders": "Đơn hàng", "products": "Sản phẩm", "payments": "Thanh toán", "billing": "Hóa đơn", "settings": "Cài đặt", "sellers": "Người bán", "referrals": "Giới thiệu", "lottoOrders": "Đơn sản phẩm đặc biệt", "ocrScanner": "Máy quét OCR", "photoUpload": "Tải ảnh", "drivePhotos": "Ảnh Drive", "ticketPricing": "Giá vé", "paymentSettings": "Cài đặt thanh toán", "exchangeRate": "Tỷ giá", "management": "Quản lý admin", "location": "Phân tích vị trí", "logout": "Đăng xuất" },
+  "common": { "search": "Tìm kiếm...", "filter": "Lọc", "export": "Xuất", "refresh": "Làm mới", "actions": "Hành động", "status": "Trạng thái", "date": "Ngày", "total": "Tổng", "details": "Chi tiết" }
+}

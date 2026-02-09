@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100% 정품",
+    "authenticDesc": "모든 상품 검증 완료",
+    "directFromUSA": "미국 직배송",
+    "directFromUSADesc": "통관 완료",
+    "securePayment": "안전한 결제",
+    "securePaymentDesc": "모든 은행 지원",
+    "fastShipping": "빠른 배송 7-14일",
+    "fastShippingDesc": "항공 배송"
+  },
+  "sections": {
+    "popularCategories": "인기 카테고리",
+    "flashSale": "플래시 세일",
+    "bestSellers": "이번 주 베스트셀러",
+    "noFlashSale": "플래시 세일 상품이 없습니다",
+    "noProducts": "아직 상품이 없습니다",
+    "specialOffer": "특별 할인",
+    "jackpotAlert": "잭팟 알림"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "세계적인 잭팟 상금을 획득하세요! 미국 공인 대리점의 특별 상품 구매 서비스."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pageTitle": "Nhiệm vụ hàng ngày", "pageDesc": "Hoàn thành nhiệm vụ để nhận thưởng!", "loading": "Đang tải...",
+  "loadError": "Không thể tải nhiệm vụ", "noMissions": "Không có nhiệm vụ", "noMissionsDesc": "Nhiệm vụ mới sẽ sớm xuất hiện",
+  "progress": "Tiến độ", "completed": "Hoàn thành!", "claimed": "Đã nhận thưởng", "claimReward": "Nhận thưởng",
+  "claiming": "Đang nhận...", "claimSuccess": "Đã nhận thưởng!", "claimError": "Lỗi nhận thưởng",
+  "alreadyClaimed": "Đã nhận", "maxClaimsReached": "Đã đạt giới hạn", "reward": "Phần thưởng",
+  "daily": "Hàng ngày", "weekly": "Hàng tuần", "monthly": "Hàng tháng", "lifetime": "Vĩnh viễn",
+  "todaysMissions": "Nhiệm vụ hôm nay", "allMissions": "Tất cả nhiệm vụ",
+  "pleaseLogin": "Đăng nhập để xem nhiệm vụ", "login": "Đăng nhập",
+  "rewardTypes": { "points": "Điểm", "coupon": "Phiếu giảm giá", "cashback": "Hoàn tiền", "lucky_draw_ticket": "Vé rút thăm" },
+  "conditionTypes": { "login": "Đăng nhập", "total_spending": "Tổng chi tiêu", "referral_count": "Giới thiệu bạn", "order_count": "Số đơn hàng", "custom": "Hoạt động đặc biệt" },
+  "admin": { "title": "Quản lý nhiệm vụ", "addMission": "Thêm nhiệm vụ", "editMission": "Sửa nhiệm vụ", "deleteMission": "Xóa nhiệm vụ", "deleteConfirm": "Bạn có chắc muốn xóa?", "deleteSuccess": "Đã xóa", "deleteError": "Lỗi xóa", "saveSuccess": "Đã lưu", "saveError": "Lỗi lưu", "missionTitle": "Tiêu đề", "missionDesc": "Mô tả", "missionType": "Loại", "conditionType": "Điều kiện", "threshold": "Mục tiêu", "period": "Chu kỳ", "rewardType": "Loại thưởng", "rewardValue": "Giá trị thưởng", "rewardDesc": "Mô tả thưởng", "priority": "Ưu tiên", "icon": "Biểu tượng", "startDate": "Ngày bắt đầu", "endDate": "Ngày kết thúc", "maxClaims": "Số lần nhận tối đa", "maxClaimsHint": "Để trống nếu không giới hạn", "isActive": "Hoạt động", "totalClaimed": "Tổng đã nhận", "noMissions": "Chưa có nhiệm vụ", "noMissionsDesc": "Tạo nhiệm vụ đầu tiên", "saving": "Đang lưu...", "save": "Lưu", "cancel": "Hủy", "active": "Hoạt động", "inactive": "Không hoạt động", "unlimited": "Không giới hạn", "people": "người" }
+}

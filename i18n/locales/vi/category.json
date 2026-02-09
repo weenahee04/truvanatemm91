@@ -1,0 +1,10 @@
+{
+  "breadcrumbHome": "Trang chủ", "breadcrumbCategory": "Danh mục", "allProducts": "Tất cả sản phẩm",
+  "newProducts": "Sản phẩm mới", "specialProducts": "Sản phẩm đặc biệt", "filters": "Bộ lọc",
+  "categories": "Danh mục", "catVitamins": "Vitamin & Thực phẩm chức năng", "catFashion": "Thời trang & Túi xách",
+  "catElectronics": "Điện tử", "catHome": "Nhà cửa & Đời sống", "priceRange": "Khoảng giá (THB)",
+  "search": "Tìm kiếm", "rating": "Đánh giá sản phẩm", "star5": "5 sao", "star4up": "4 sao trở lên",
+  "star3up": "3 sao trở lên", "itemCount": "{{count}} sản phẩm", "sortBy": "Sắp xếp:", "recommended": "Đề xuất",
+  "loading": "Đang tải sản phẩm...", "lottoDesc": "Giành giải thưởng jackpot đẳng cấp thế giới",
+  "pickNumbers": "Chọn số của bạn", "noProducts": "Không tìm thấy sản phẩm", "noProductsDesc": "Chưa có sản phẩm trong danh mục này"
+}

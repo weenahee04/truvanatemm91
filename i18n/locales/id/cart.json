@@ -1,0 +1,7 @@
+{
+  "title": "Keranjang Belanja",
+  "titleWithCount": "Keranjang Belanja ({{count}} item)",
+  "empty": { "title": "Keranjang kosong", "description": "Belum ada item. Jelajahi produk berkualitas dari USA!" },
+  "summary": { "title": "Ringkasan Pesanan", "subtotal": "Subtotal ({{count}} buah)", "shipping": "Ongkir (Udara)", "discount": "Diskon", "total": "Total", "discountCode": "Masukkan kode diskon" },
+  "option": "Opsi: {{option}}"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "장바구니",
+  "titleWithCount": "장바구니 ({{count}}개)",
+  "empty": {
+    "title": "장바구니가 비어있습니다",
+    "description": "아직 상품이 없습니다. 미국의 고품질 상품을 둘러보세요!"
+  },
+  "summary": {
+    "title": "주문 요약",
+    "subtotal": "소계 ({{count}}개)",
+    "shipping": "배송비 (항공)",
+    "discount": "할인",
+    "total": "합계",
+    "discountCode": "할인 코드 입력"
+  },
+  "option": "옵션: {{option}}"
+}

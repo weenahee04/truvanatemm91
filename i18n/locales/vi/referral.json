@@ -1,0 +1,15 @@
+{
+  "pageTitle": "Chương trình giới thiệu", "pageDesc": "Giới thiệu bạn bè và nhận 10% hoa hồng!",
+  "pleaseLogin": "Vui lòng đăng nhập", "login": "Đăng nhập", "loadError": "Không thể tải dữ liệu",
+  "codeCopied": "Đã sao chép mã!", "linkCopied": "Đã sao chép link!",
+  "shareText": "Đăng ký Truvamate qua link của tôi để nhận ưu đãi!", "referredFriends": "Bạn bè đã giới thiệu",
+  "purchased": "Đã mua", "totalEarnings": "Tổng thu nhập", "pendingPayout": "Đang chờ",
+  "yourCode": "Mã của bạn", "copiedBtn": "Đã sao chép!", "copyCode": "Sao chép mã", "copyLink": "Sao chép link",
+  "shareTo": "Chia sẻ:", "howToUse": "Cách sử dụng:", "howToStep1": "Chia sẻ mã với bạn bè",
+  "howToStep2": "Bạn bè đăng ký bằng mã", "howToStep3": "Bạn bè mua hàng lần đầu",
+  "howToStep4": "Bạn nhận 10% từ đơn hàng!", "friendsReferred": "Bạn bè đã giới thiệu",
+  "noFriendsYet": "Chưa có bạn bè được giới thiệu", "startSharing": "Bắt đầu chia sẻ mã ngay!",
+  "paid": "Đã trả", "waitingPurchase": "Đang chờ", "commissionTerms": "Điều khoản hoa hồng:",
+  "term1": "Bạn bè phải đăng ký bằng mã của bạn", "term2": "Bạn bè phải mua lần đầu ít nhất ฿500",
+  "term3": "Nhận 10% đơn hàng (tối đa ฿500/người)", "term4": "Hoa hồng trả trong 7-14 ngày sau khi bạn bè nhận hàng"
+}

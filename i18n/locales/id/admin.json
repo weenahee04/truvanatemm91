@@ -1,0 +1,4 @@
+{
+  "panel": { "title": "Panel Admin", "dashboard": "Dashboard", "users": "Pengguna", "orders": "Pesanan", "products": "Produk", "payments": "Pembayaran", "billing": "Tagihan", "settings": "Pengaturan", "sellers": "Penjual", "referrals": "Referral", "lottoOrders": "Pesanan Produk Spesial", "ocrScanner": "Scanner OCR", "photoUpload": "Upload Foto", "drivePhotos": "Foto Drive", "ticketPricing": "Harga Tiket", "paymentSettings": "Pengaturan Pembayaran", "exchangeRate": "Kurs", "management": "Manajemen Admin", "location": "Analitik Lokasi", "logout": "Keluar" },
+  "common": { "search": "Cari...", "filter": "Filter", "export": "Ekspor", "refresh": "Refresh", "actions": "Aksi", "status": "Status", "date": "Tanggal", "total": "Total", "details": "Detail" }
+}

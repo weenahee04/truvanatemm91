@@ -1,0 +1,35 @@
+{
+  "panel": {
+    "title": "لوحة الإدارة",
+    "dashboard": "لوحة التحكم",
+    "users": "المستخدمون",
+    "orders": "الطلبات",
+    "products": "المنتجات",
+    "payments": "المدفوعات",
+    "billing": "الفواتير",
+    "settings": "الإعدادات",
+    "sellers": "البائعون",
+    "referrals": "الإحالات",
+    "lottoOrders": "طلبات المنتجات الخاصة",
+    "ocrScanner": "ماسح OCR",
+    "photoUpload": "رفع الصور",
+    "drivePhotos": "صور Drive",
+    "ticketPricing": "تسعير التذاكر",
+    "paymentSettings": "إعدادات الدفع",
+    "exchangeRate": "سعر الصرف",
+    "management": "إدارة المسؤولين",
+    "location": "تحليلات الموقع",
+    "logout": "تسجيل الخروج"
+  },
+  "common": {
+    "search": "بحث...",
+    "filter": "تصفية",
+    "export": "تصدير",
+    "refresh": "تحديث",
+    "actions": "إجراءات",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "total": "الإجمالي",
+    "details": "التفاصيل"
+  }
+}

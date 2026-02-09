@@ -1,0 +1,13 @@
+{
+  "panel": {
+    "title": "관리자 패널", "dashboard": "대시보드", "users": "사용자", "orders": "주문", "products": "상품",
+    "payments": "결제", "billing": "청구", "settings": "설정", "sellers": "셀러", "referrals": "추천",
+    "lottoOrders": "특별 상품 주문", "ocrScanner": "OCR 스캐너", "photoUpload": "사진 업로드",
+    "drivePhotos": "Drive 사진", "ticketPricing": "티켓 가격 설정", "paymentSettings": "결제 설정",
+    "exchangeRate": "환율", "management": "관리자 관리", "location": "위치 분석", "logout": "로그아웃"
+  },
+  "common": {
+    "search": "검색...", "filter": "필터", "export": "내보내기", "refresh": "새로고침",
+    "actions": "작업", "status": "상태", "date": "날짜", "total": "합계", "details": "상세"
+  }
+}

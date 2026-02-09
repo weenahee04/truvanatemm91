@@ -1,0 +1,20 @@
+{
+  "pageTitle": "일일 미션", "pageDesc": "미션을 완료하고 보상을 받으세요!", "loading": "미션 로딩 중...",
+  "loadError": "미션을 불러올 수 없습니다", "noMissions": "이용 가능한 미션이 없습니다", "noMissionsDesc": "새로운 미션이 곧 나타납니다",
+  "progress": "진행", "completed": "완료!", "claimed": "보상 수령됨", "claimReward": "보상 받기", "claiming": "수령 중...",
+  "claimSuccess": "보상을 받았습니다!", "claimError": "보상 수령 오류", "alreadyClaimed": "이미 수령함", "maxClaimsReached": "최대 수령 횟수 도달",
+  "reward": "보상", "daily": "일일", "weekly": "주간", "monthly": "월간", "lifetime": "영구",
+  "todaysMissions": "오늘의 미션", "allMissions": "전체 미션", "pleaseLogin": "미션을 보려면 로그인해주세요", "login": "로그인",
+  "rewardTypes": { "points": "포인트", "coupon": "쿠폰", "cashback": "캐시백", "lucky_draw_ticket": "추첨 티켓" },
+  "conditionTypes": { "login": "로그인", "total_spending": "총 지출", "referral_count": "친구 추천", "order_count": "주문 수", "custom": "특별 활동" },
+  "admin": {
+    "title": "미션 관리", "addMission": "미션 추가", "editMission": "미션 편집", "deleteMission": "미션 삭제",
+    "deleteConfirm": "이 미션을 삭제하시겠습니까?", "deleteSuccess": "미션이 삭제되었습니다", "deleteError": "미션 삭제 오류",
+    "saveSuccess": "미션이 저장되었습니다", "saveError": "미션 저장 오류", "missionTitle": "미션 제목", "missionDesc": "설명",
+    "missionType": "유형", "conditionType": "조건", "threshold": "목표", "period": "기간", "rewardType": "보상 유형",
+    "rewardValue": "보상 값", "rewardDesc": "보상 설명", "priority": "우선순위", "icon": "아이콘", "startDate": "시작일",
+    "endDate": "종료일", "maxClaims": "최대 수령 횟수", "maxClaimsHint": "무제한은 비워두세요", "isActive": "활성",
+    "totalClaimed": "총 수령 수", "noMissions": "아직 미션이 없습니다", "noMissionsDesc": "첫 번째 미션을 만들어보세요",
+    "saving": "저장 중...", "save": "저장", "cancel": "취소", "active": "활성", "inactive": "비활성", "unlimited": "무제한", "people": "명"
+  }
+}

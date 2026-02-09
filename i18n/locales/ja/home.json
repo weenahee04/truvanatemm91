@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100%正規品",
+    "authenticDesc": "全商品検証済み",
+    "directFromUSA": "アメリカ直送",
+    "directFromUSADesc": "通関済み",
+    "securePayment": "安全なお支払い",
+    "securePaymentDesc": "全銀行対応",
+    "fastShipping": "迅速配送 7-14日",
+    "fastShippingDesc": "航空便対応"
+  },
+  "sections": {
+    "popularCategories": "人気カテゴリー",
+    "flashSale": "フラッシュセール",
+    "bestSellers": "今週のベストセラー",
+    "noFlashSale": "フラッシュセール商品はありません",
+    "noProducts": "商品はまだありません",
+    "specialOffer": "特別オファー",
+    "jackpotAlert": "ジャックポットアラート"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "世界クラスのジャックポット賞金を獲得しよう！アメリカの正規代理店からの特別商品購入サービス。"
+  }
+}

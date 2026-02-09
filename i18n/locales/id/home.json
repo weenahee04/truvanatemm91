@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100% Asli",
+    "authenticDesc": "Setiap item terverifikasi",
+    "directFromUSA": "Langsung dari USA",
+    "directFromUSADesc": "Sudah bea cukai",
+    "securePayment": "Pembayaran Aman",
+    "securePaymentDesc": "Semua bank didukung",
+    "fastShipping": "Cepat 7-14 Hari",
+    "fastShippingDesc": "Pengiriman udara"
+  },
+  "sections": {
+    "popularCategories": "Kategori Populer",
+    "flashSale": "FLASH SALE",
+    "bestSellers": "Terlaris Minggu Ini",
+    "noFlashSale": "Tidak ada produk Flash Sale",
+    "noProducts": "Belum ada produk",
+    "specialOffer": "PENAWARAN SPESIAL",
+    "jackpotAlert": "Peringatan Jackpot"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "Menangkan hadiah jackpot kelas dunia hari ini! Layanan pembelian produk spesial dari agen resmi di Amerika Serikat."
+  }
+}

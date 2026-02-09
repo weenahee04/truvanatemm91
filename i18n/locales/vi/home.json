@@ -1,0 +1,25 @@
+{
+  "trustBadges": {
+    "authentic": "100% Chính hãng",
+    "authenticDesc": "Mọi sản phẩm đều được xác minh",
+    "directFromUSA": "Trực tiếp từ Mỹ",
+    "directFromUSADesc": "Đã thông quan",
+    "securePayment": "Thanh toán an toàn",
+    "securePaymentDesc": "Hỗ trợ tất cả ngân hàng",
+    "fastShipping": "Giao hàng nhanh 7-14 ngày",
+    "fastShippingDesc": "Vận chuyển hàng không"
+  },
+  "sections": {
+    "popularCategories": "Danh mục phổ biến",
+    "flashSale": "FLASH SALE",
+    "bestSellers": "Bán chạy nhất tuần này",
+    "noFlashSale": "Không có sản phẩm Flash Sale",
+    "noProducts": "Chưa có sản phẩm",
+    "specialOffer": "ƯU ĐÃI ĐẶC BIỆT",
+    "jackpotAlert": "Cảnh báo Jackpot"
+  },
+  "lottoBanner": {
+    "title": "US Powerball & Mega Millions",
+    "description": "Giành giải thưởng jackpot đẳng cấp thế giới hôm nay! Dịch vụ mua sản phẩm đặc biệt từ đại lý ủy quyền tại Mỹ."
+  }
+}

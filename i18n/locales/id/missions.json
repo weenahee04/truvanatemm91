@@ -1,0 +1,12 @@
+{
+  "pageTitle": "Misi Harian", "pageDesc": "Selesaikan misi untuk mendapat hadiah!", "loading": "Memuat misi...",
+  "loadError": "Tidak bisa memuat misi", "noMissions": "Tidak ada misi", "noMissionsDesc": "Misi baru akan segera muncul",
+  "progress": "Progres", "completed": "Selesai!", "claimed": "Hadiah Diterima", "claimReward": "Ambil Hadiah",
+  "claiming": "Mengambil...", "claimSuccess": "Hadiah diterima!", "claimError": "Error mengambil hadiah",
+  "alreadyClaimed": "Sudah diambil", "maxClaimsReached": "Batas tercapai", "reward": "Hadiah",
+  "daily": "Harian", "weekly": "Mingguan", "monthly": "Bulanan", "lifetime": "Selamanya",
+  "todaysMissions": "Misi Hari Ini", "allMissions": "Semua Misi", "pleaseLogin": "Masuk untuk melihat misi", "login": "Masuk",
+  "rewardTypes": { "points": "Poin", "coupon": "Kupon", "cashback": "Cashback", "lucky_draw_ticket": "Tiket Undian" },
+  "conditionTypes": { "login": "Login", "total_spending": "Total Belanja", "referral_count": "Ajak Teman", "order_count": "Jumlah Pesanan", "custom": "Aktivitas Spesial" },
+  "admin": { "title": "Kelola Misi", "addMission": "Tambah Misi", "editMission": "Edit Misi", "deleteMission": "Hapus Misi", "deleteConfirm": "Yakin hapus misi ini?", "deleteSuccess": "Misi dihapus", "deleteError": "Error menghapus", "saveSuccess": "Misi disimpan", "saveError": "Error menyimpan", "missionTitle": "Judul Misi", "missionDesc": "Deskripsi", "missionType": "Tipe", "conditionType": "Kondisi", "threshold": "Target", "period": "Periode", "rewardType": "Tipe Hadiah", "rewardValue": "Nilai Hadiah", "rewardDesc": "Deskripsi Hadiah", "priority": "Prioritas", "icon": "Ikon", "startDate": "Tanggal Mulai", "endDate": "Tanggal Selesai", "maxClaims": "Maks Klaim", "maxClaimsHint": "Kosongkan untuk unlimited", "isActive": "Aktif", "totalClaimed": "Total Diklaim", "noMissions": "Belum ada misi", "noMissionsDesc": "Buat misi pertama", "saving": "Menyimpan...", "save": "Simpan", "cancel": "Batal", "active": "Aktif", "inactive": "Nonaktif", "unlimited": "Unlimited", "people": "orang" }
+}
