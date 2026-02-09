@@ -37,7 +37,7 @@ const MENU_SECTIONS = [
       { name: 'การเงิน', icon: Wallet, path: '/admin/payments', badge: null },
       { name: 'การออกบิล', icon: FileText, path: '/admin/billing', badge: null },
       { name: 'Referral System', icon: Award, path: '/admin/referrals', badge: null },
-      { name: 'กิจกรรมประจำวัน', icon: Trophy, path: '/admin/missions', badge: null },
+      // { name: 'กิจกรรมประจำวัน', icon: Trophy, path: '/admin/missions', badge: null },
       { name: 'Location Analytics', icon: MapPin, path: '/admin/location', badge: null },
       { name: 'Admin management', icon: Shield, path: '/admin/management', badge: null },
     ]

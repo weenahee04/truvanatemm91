@@ -8,7 +8,7 @@ import { createOrder, getUserOrders } from '../services/orderService';
 import { processReferralCommission } from '../services/referralService';
 import { logout as firebaseLogout } from '../services/authService';
 import { setSessionExpiry, clearSessionExpiry, isSessionExpired, SESSION_DURATION_MS } from '../utils/session';
-import { trackAllMissionsOnLogin, trackSpending, trackOrderCount } from '../services/missionTracker';
+// import { trackAllMissionsOnLogin, trackSpending, trackOrderCount } from '../services/missionTracker';
 
 // Default Mock Data for CMS
 const DEFAULT_CONTENT: SiteContent = {
@@ -373,9 +373,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
             // Process referral commission (checks cumulative spending)
             const referralResult = await processReferralCommission(user.id, order.total);
             
-            // Track spending & order count missions
-            trackSpending(user.id, order.total).catch(err => console.warn('Mission spending track error:', err));
-            trackOrderCount(user.id).catch(err => console.warn('Mission order track error:', err));
 
             if (referralResult.success && referralResult.commission) {
               showToast(
@@ -447,10 +444,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       setUser(userData);
       setSessionExpiry(SESSION_DURATION_MS);
       showToast(i18n.t('common:toast.welcome', { name: userData.name }), 'success');
-      // Track daily login mission
-      if (userData.id) {
-        trackAllMissionsOnLogin(userData.id).catch(err => console.warn('Mission tracking error:', err));
-      }
     } else {
       // Legacy: if it's just an email string, use it as fallback
       setUser({

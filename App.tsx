@@ -37,8 +37,8 @@ import AdminOCRScanner from './pages/AdminOCRScanner';
 import ReferralDashboard from './pages/ReferralDashboard';
 import AdminReferrals from './pages/AdminReferrals';
 import AdminBilling from './pages/AdminBilling';
-import AdminMissions from './pages/AdminMissions';
-import DailyMissions from './pages/DailyMissions';
+// import AdminMissions from './pages/AdminMissions';
+// import DailyMissions from './pages/DailyMissions';
 import { AdminLogin } from './pages/AdminLogin';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { AdminManagement } from './pages/AdminManagement';
@@ -97,7 +97,7 @@ const App: React.FC = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/referrals" element={<ReferralDashboard />} />
-            <Route path="/missions" element={<DailyMissions />} />
+            {/* <Route path="/missions" element={<DailyMissions />} /> */}
             <Route path="/special-products" element={<SpecialProducts />} />
             <Route path="/lotto" element={<SpecialProducts />} />
             <Route path="/special-products-legal" element={<SpecialProductsLegal />} />
@@ -134,7 +134,7 @@ const App: React.FC = () => {
             <Route path="/admin/payment-settings" element={<ProtectedRoute requiredRole={['super_admin']}><AdminPaymentSettings /></ProtectedRoute>} />
             <Route path="/admin/ticket-pricing" element={<ProtectedRoute requiredRole={['super_admin']}><AdminTicketPricing /></ProtectedRoute>} />
 
-            <Route path="/admin/missions" element={<ProtectedRoute requiredRole={['super_admin']}><AdminMissions /></ProtectedRoute>} />
+            {/* <Route path="/admin/missions" element={<ProtectedRoute requiredRole={['super_admin']}><AdminMissions /></ProtectedRoute>} /> */}
             <Route path="/admin/management" element={<ProtectedRoute requiredRole="super_admin"><AdminManagement /></ProtectedRoute>} />
 
             {/* Admin root - super_admin only; accounting เข้า /admin/payments หรือ /admin/billing */}

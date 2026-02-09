@@ -9,7 +9,7 @@ import { useGlobal } from '../context/GlobalContext';
 import { SEO, SEOPresets } from '../components/SEO';
 import { getAllProducts, getFlashSaleProducts } from '../services/productService';
 import { Product } from '../types';
-import MissionWidget from '../components/MissionWidget';
+// import MissionWidget from '../components/MissionWidget';
 import { useJackpots } from '../services/jackpotService';
 
 export const Home: React.FC = () => {
@@ -215,10 +215,6 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Daily Missions Widget */}
-      <section className="max-w-7xl mx-auto px-4 mt-8">
-        <MissionWidget />
-      </section>
 
       {/* Popular Categories - Editable */}
       <section className="max-w-7xl mx-auto px-4 relative group">
